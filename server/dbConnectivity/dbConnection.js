@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB_URI="mongodb+srv://swadeshishu2001:ishu2001@cluster0.sgxb5nf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const DB_URI="mongodb+srv://swadeshishu2001:ishu2001@cluster0.sgxb5nf.mongodb.net/roxiler_assis?retryWrites=true&w=majority&appName=Cluster0"
 
 // const DB_URI="mongodb+srv://Test_Connection:Manoj2000@cluster0.uf11sxk.mongodb.net/Texly_Private_Limited?retryWrites=true&w=majority"
 mongoose.connect(DB_URI, {
