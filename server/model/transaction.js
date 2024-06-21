@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
-let objectId = mongoose.Schema.Types.ObjectId;
 const transactionSchema = new mongoose.Schema(
   {
     rating: {
       price: Number,
-      require: true,
     },
     title: {
       type: String,
