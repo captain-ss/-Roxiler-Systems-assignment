@@ -20,7 +20,6 @@ module.exports = {
       }
       const limit = Number(data.limit) || 10;
       const offset = (Number(data.offset) || 0) * limit;
-      totalDocumentsCount = Math.ceil(totalDocumentsCount / limit);
 
       let transactions = await transactionModel.aggregate([
         {
@@ -53,5 +52,8 @@ module.exports = {
         error: error.toString(),
       });
     }
+  },
+  getChartData: async function (req, res) {
+    
   },
 };
