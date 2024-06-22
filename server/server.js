@@ -21,6 +21,8 @@ app.use(express.json({ limit: "1000mb" }));
 app.use(express.urlencoded({ extended: true, limit: "1000mb" }));
 
 // app.use("/api/v1", require("./routers/indexRouter"));
+app.use("/api/v1", require("./routes/transaction"));
+
 app.get("/", async (req, res) => {
   try {
     let transactions = await axios.get(
